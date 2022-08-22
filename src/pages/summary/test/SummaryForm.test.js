@@ -1,34 +1,6 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import SummaryForm from "../SummaryForm";
 import userEvent from "@testing-library/user-event";
-// test("Checkbox unchecked and button disabled initially", () => {
-//   render(<SummaryForm />);
-
-//   const checkbox = screen.getByRole("checkbox", {
-//     name: "I agree to Terms and Conditions",
-//   });
-
-//   const button = screen.getByRole("button", { name: "Confirm Order" });
-//   expect(checkbox).not.toBeChecked();
-//   expect(button).toBeDisabled();
-// });
-
-// test("Checkbox checked and button enabled", async () => {
-//   const user = userEvent.setup();
-
-//   render(<SummaryForm />);
-
-//   const checkbox = screen.getByRole("checkbox", {
-//     name: "I agree to Terms and Conditions",
-//   });
-//   const button = screen.getByRole("button", { name: "Confirm Order" });
-//   await user.click(checkbox);
-//   expect(button).toBeEnabled();
-
-//   await user.click(checkbox);
-//   expect(button).toBeDisabled();
-// });
-
 test("popover responds to hover", async () => {
   const user = userEvent.setup();
   render(<SummaryForm />);
